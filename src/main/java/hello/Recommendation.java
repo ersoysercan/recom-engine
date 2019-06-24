@@ -3,15 +3,18 @@ package hello;
 public class Recommendation {
 
     private final String userId;
-    private final String [] productId;
+    private final String [] productIds;
 
-    public Recommendation(String userId, String [] productId) {
+    public Recommendation(String userId, String [] productIds) {
         this.userId = userId;
-        this.productId = productId;
+        this.productIds = productIds;
     }
 
     public String getUserId() {
         return userId;
     }
 
+    public String[] getProductIds() {
+        return productIds;
+    }
 }
