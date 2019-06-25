@@ -1,4 +1,4 @@
-package hello;
+package com.trendyol.recomengine.resource;
 
 public class Recommendation {
 
@@ -18,3 +18,4 @@ public class Recommendation {
         return productIds;
     }
 }
+
