@@ -6,10 +6,10 @@ public class Review {
 
     private final String userId;
     private final String productId;
-    private final int score;
+    private final float score;
     private final Date time;
 
-    public Review(String userId, String productId, int score, Date time) {
+    public Review(String userId, String productId, float score, Date time) {
         this.userId = userId;
         this.productId = productId;
         this.score = score;
@@ -24,7 +24,7 @@ public class Review {
         return productId;
     }
 
-    public int getScore() {
+    public float getScore() {
         return score;
     }
 
