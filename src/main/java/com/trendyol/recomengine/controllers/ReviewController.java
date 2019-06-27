@@ -23,17 +23,12 @@ public class ReviewController {
 
     @PostMapping(value = "/users/{userId}/reviews")
     public Object sendMessageToKafkaTopic(@RequestBody Review newReview) {
-        try {
-            ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
-            String jsonObject = ow.writeValueAsString(newReview);
-            this.producer.sendMessage(jsonObject);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
-
         if (newReview.getScore() > 5) return new Object() {
             public final String error = "Score can't be larger than 5";
         };
+
+        String dataToSendToKafka = String.format("%s::%s::%d::%d", newReview.getUserId(), newReview.getProductId(), newReview.getScore(), newReview.getTime().getTime()/100);
+        this.producer.sendMessage(dataToSendToKafka);
 
         return newReview;
     }
