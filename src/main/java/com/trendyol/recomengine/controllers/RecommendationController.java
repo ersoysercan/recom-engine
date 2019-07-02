@@ -12,7 +12,7 @@ public class RecommendationController {
     private RecommendationRepository repository;
 
     @GetMapping("/users/{_id}/recommendations")
-    public Object recommend(@PathVariable String _id) {
+    Object recommend(@PathVariable String _id) {
 
         Recommendation fetched = repository.findBy_id(_id);
         return fetched == null ? "fail" : fetched;

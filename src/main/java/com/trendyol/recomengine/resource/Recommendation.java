@@ -1,7 +1,9 @@
 package com.trendyol.recomengine.resource;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "recommendations")
 public class Recommendation {
 
     @Id

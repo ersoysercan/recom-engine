@@ -1,8 +1,5 @@
 package com.trendyol.recomengine.controllers;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
 import com.trendyol.recomengine.engine.Producer;
 import com.trendyol.recomengine.resource.Review;
 import org.springframework.beans.factory.annotation.Autowired;
