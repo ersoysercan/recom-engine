@@ -1,21 +1,25 @@
 package com.trendyol.recomengine.resource;
 
+import org.springframework.data.annotation.Id;
+
 public class Recommendation {
 
-    private final String userId;
-    private final String [] productIds;
+    @Id
+    private final String _id;
 
-    public Recommendation(String userId, String [] productIds) {
-        this.userId = userId;
-        this.productIds = productIds;
+    private final String [] recommendations;
+
+    public Recommendation(String _id, String [] recommendations) {
+        this._id = _id;
+        this.recommendations = recommendations;
     }
 
-    public String getUserId() {
-        return userId;
+    public String get_id() {
+        return _id;
     }
 
-    public String[] getProductIds() {
-        return productIds;
+    public String[] getRecommendations() {
+        return recommendations;
     }
 }
 
