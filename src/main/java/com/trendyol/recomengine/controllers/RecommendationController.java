@@ -11,11 +11,13 @@ public class RecommendationController {
     @Autowired
     private RecommendationRepository repository;
 
+    private String[] defaultRecoms = {"100", "101", "102", "103", "104", "105", "106", "107", "108", "109"};
+
     @GetMapping("/users/{_id}/recommendations")
     Object recommend(@PathVariable String _id) {
 
         Recommendation fetched = repository.findBy_id(_id);
-        return fetched == null ? "fail" : fetched;
+        return fetched == null ? new Recommendation(_id, defaultRecoms) : fetched;
 
     }
 
