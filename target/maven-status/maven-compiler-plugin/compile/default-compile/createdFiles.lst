@@ -1,0 +1,9 @@
+com/trendyol/recomengine/controllers/ReviewController.class
+com/trendyol/recomengine/controllers/RecommendationController.class
+com/trendyol/recomengine/engine/Consumer.class
+com/trendyol/recomengine/RecomEngineApplication.class
+com/trendyol/recomengine/controllers/ReviewController$1.class
+com/trendyol/recomengine/repositories/RecommendationRepository.class
+com/trendyol/recomengine/resource/Review.class
+com/trendyol/recomengine/resource/Recommendation.class
+com/trendyol/recomengine/engine/Producer.class

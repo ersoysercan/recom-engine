@@ -1,0 +1,8 @@
+/home/yasin.uygun@trendyol.work/workspace/java/recom-engine/src/main/java/com/trendyol/recomengine/engine/Producer.java
+/home/yasin.uygun@trendyol.work/workspace/java/recom-engine/src/main/java/com/trendyol/recomengine/controllers/RecommendationController.java
+/home/yasin.uygun@trendyol.work/workspace/java/recom-engine/src/main/java/com/trendyol/recomengine/resource/Review.java
+/home/yasin.uygun@trendyol.work/workspace/java/recom-engine/src/main/java/com/trendyol/recomengine/repositories/RecommendationRepository.java
+/home/yasin.uygun@trendyol.work/workspace/java/recom-engine/src/main/java/com/trendyol/recomengine/resource/Recommendation.java
+/home/yasin.uygun@trendyol.work/workspace/java/recom-engine/src/main/java/com/trendyol/recomengine/controllers/ReviewController.java
+/home/yasin.uygun@trendyol.work/workspace/java/recom-engine/src/main/java/com/trendyol/recomengine/RecomEngineApplication.java
+/home/yasin.uygun@trendyol.work/workspace/java/recom-engine/src/main/java/com/trendyol/recomengine/engine/Consumer.java
