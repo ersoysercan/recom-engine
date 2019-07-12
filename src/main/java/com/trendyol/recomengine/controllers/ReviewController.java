@@ -24,7 +24,7 @@ public class ReviewController {
             public final String error = "Score can't be larger than 5";
         };
 
-        String dataToSendToKafka = String.format("%s::%s::%.1f::%d", newReview.getUserId(), newReview.getProductId(), newReview.getScore(), newReview.getTime().getTime()/100);
+        String dataToSendToKafka = String.format("%s,%s,%.1f,%d", newReview.getUserId(), newReview.getProductId(), newReview.getScore(), newReview.getTime().getTime()/100);
         this.producer.sendMessage(dataToSendToKafka);
 
         return newReview;
